@@ -1,7 +1,4 @@
 function bfs(rootNode, vertices, edges){
-
-}
-
   const nodes = []
   const queue = [rootNode]
   rootNode.distance = 0
@@ -15,7 +12,7 @@ function bfs(rootNode, vertices, edges){
     nodes.push(currentNode)
   }
   return nodes
-
+}
 
 function findAdjacent(rootNode, vertices, edges) {
   const pairs = edges.filter(e => e.includes(rootNode))
